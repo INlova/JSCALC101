@@ -13,12 +13,17 @@ $(document).ready(function() {
 			var operator = "";
 			var totaldiv = $("#total");
 			totaldiv.text("0");
+			
+$("#numbers a").not("#clear,#clearall").click(function() {
+	number += $(this).text();
+	totaldiv.text(number);
+	testNumLength(number);
+});
+/*help me JS, you're my only hope!! Just saw the LAST JEDI!!*/
 
-//help me JS, you're my only hope!! Just saw the LAST JEDI!!
 
 
-
-               |||      |||    
+/*               |||      |||    
                | |  __  | |
 |-|_____-----/   |_|  |_|   \-----_____|-|
 |_|_________{   }|  (^) |{  }__________|_|  
@@ -35,4 +40,4 @@ $(document).ready(function() {
                    \  /
                    \  /    
                    \  /
-                    \/
+                    \/ */
