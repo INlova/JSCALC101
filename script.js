@@ -19,6 +19,13 @@ $("#numbers a").not("#clear,#clearall").click(function() {
 	totaldiv.text(number);
 	testNumLength(number);
 });
+
+$("#operators a").not("#equals").click(function() {
+	operator = $(this).text();
+	newnumber = number;
+	number = "";
+	totaldiv.text("0");
+});
 /*help me JS, you're my only hope!! Just saw the LAST JEDI!!*/
 
 
