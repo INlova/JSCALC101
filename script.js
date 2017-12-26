@@ -35,13 +35,6 @@ $(document).ready(function() { // function ready onload
 	$("#equals").click(function() { //onclick function runs the calc inputs
 		if (operator === "+") {
 			number = (parseInt(number, 10) + parseInt(newnumber, 10)).toString(10);
-		} else if (operator === "-") {
-			number = (parseInt(newnumber, 10) - parseInt(number, 10)).toString(10);
-		} else if (operator === "/") {
-			number = (parseInt(newnumber, 10) / parseInt(number, 10)).toString(10);
-		} else if (operator === "*") {
-			number = (parseInt(newnumber, 10) * parseInt(number, 10)).toString(10);
-		}
 		totaldiv.text(number);
 		testNumLength(number);
 		number = "";
