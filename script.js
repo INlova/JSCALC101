@@ -1,3 +1,5 @@
+/* global $ */
+
 $(document).ready(function() { // function ready onload
 	var testNumLength = function(number) { //numlength var, number function 
 		if (number.length > 9) { //for loop, inputs >9 inclusiveof 0
@@ -39,7 +41,9 @@ $(document).ready(function() { // function ready onload
 			number = (parseInt(newnumber, 10) - parseInt(number, 10)).toString(10);
 		} else if (operator === "*") {
 			number = (parseInt(newnumber, 10) * parseInt(number, 10)).toString(10);
-		} 
+		} else if (operator === "/") {
+			number = (parseInt(newnumber, 10) / parseInt(number, 10)).toString(10);
+		}
 		totaldiv.text(number);
 		testNumLength(number);
 		number = "";
