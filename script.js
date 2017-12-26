@@ -1,6 +1,6 @@
-$(document).ready(function() {
-			var testNumLength = function(number) {
-				if (number.length > 9) {
+$(document).ready(function() {// function ready onload
+			var testNumLength = function(number) { //numlength var, number function 
+				if (number.length > 9) { //for loop, inputs >9 inclusiveof 0
 					totaldiv.text(number.substr(number.length - 9, 9));
 					if (number.length > 15) {
 						number = "";
@@ -8,10 +8,10 @@ $(document).ready(function() {
 					}
 				}
 			};
-			var number = "";
-			var newnumber = "";
-			var operator = "";
-			var totaldiv = $("#total");
+			var number = ""; //current number must be variable not fixed
+			var newnumber = ""; // num being entered must be variable too
+			var operator = ""; //must also be variable to include all 4! +, -, /, and *.
+			var totaldiv = $("#total");// runnning count in totaldiv
 			totaldiv.text("0");
 			
 $("#numbers a").not("#clear,#clearall").click(function() {
@@ -34,7 +34,12 @@ $("#operators a").not("#equals").click(function() {
 	number = "";
 	totaldiv.text("0");
 });
-/*help me JS, you're my only hope!! Just saw the LAST JEDI!!*/
+
+//Add your last .click() here!
+    $("#equals").click(function(){ //onclick function runs the calc inputs
+/*help me JS, you're my only hope!! Just saw the LAST JEDI!!
+
+parseInt to string for each operator? No scuts here?
 
 
 
@@ -55,4 +60,7 @@ $("#operators a").not("#equals").click(function() {
                    \  /
                    \  /    
                    \  /
-                    \/ */
+                    \/
+                    //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+                    https://www.codecademy.com/en/forum_questions/505814cfcb744300020146e3
+                    .
