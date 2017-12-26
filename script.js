@@ -20,6 +20,14 @@ $("#numbers a").not("#clear,#clearall").click(function() {
 	testNumLength(number);
 });
 
+ $("#clear,#clearall").click(function() {
+ 	number = "";
+ 	totaldiv.text("0");
+ 	if ($(this).attr("id") === "clearall") {
+ 		newnumber = "";
+ 	}
+ });
+ 
 $("#operators a").not("#equals").click(function() {
 	operator = $(this).text();
 	newnumber = number;
