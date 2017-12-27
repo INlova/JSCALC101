@@ -72,7 +72,7 @@ parseInt to string for each operator? No scuts here?
                   
                   
                       
-                   \  /
+                   
                     \/
                     //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
                     https://www.codecademy.com/en/forum_questions/505814cfcb744300020146e3
